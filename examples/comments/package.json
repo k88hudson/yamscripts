@@ -1,0 +1,19 @@
+{
+  "name": "npm-scripts-yaml",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "js-yaml": "^3.5.2"
+  },
+  "devDependencies": {
+    "yamljs": "^0.2.4"
+  },
+  "scripts": {
+    "test": "mocha -R spec",
+    "foo": "hello world",
+    "build": "This is a build"
+  }
+}
