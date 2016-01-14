@@ -10,19 +10,19 @@ const yamScripts = new YamScripts();
 const sampleComments = `# foo: This is the foo task
 # This is more info for it.
 foo: bar
-# bar: This is bar.
-bar: foo
+# bar:bar: This is bar.
+bar:bar: foo
 # this comment should not show up
 # baz: This is baz!`;
 
 const result = `
-    foo  This is the foo task
-         This is more info for it.
-    bar  This is bar.`.replace('\n', '');
+    foo      This is the foo task
+             This is more info for it.
+    bar:bar  This is bar.`.replace('\n', '');
 
 describe('getComments', () => {
   it('should get format comments given some yaml text', () => {
-    const actual = yamScripts.getComments(sampleComments, ['foo', 'bar', 'baz']);
+    const actual = yamScripts.getComments(sampleComments, ['foo', 'bar:bar', 'baz']);
     console.log(actual);
     assert.equal(stripAnsi(actual), result)
   });

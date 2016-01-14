@@ -1,6 +1,6 @@
 scripts:
   # compile: Compiles yamscript
-  compile: 'node ./bin/yamscripts'
+  yamscripts: 'node ./bin/yamscripts'
 
   # test: Runs tests
   test: 'mocha tests/**/*.test.js -R spec'

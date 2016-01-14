@@ -7,7 +7,7 @@
     "yamscripts": "./bin/yamscripts.js"
   },
   "scripts": {
-    "compile": "node ./bin/yamscripts",
+    "yamscripts": "node ./bin/yamscripts",
     "test": "mocha tests/**/*.test.js -R spec",
     "test:watch": "npm run test -- -w"
   },

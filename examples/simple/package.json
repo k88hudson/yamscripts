@@ -13,6 +13,7 @@
   },
   "scripts": {
     "foo": "echo foo",
-    "bar": "echo bar"
+    "bar": "echo bar",
+    "yamscripts": "yamscripts"
   }
 }
