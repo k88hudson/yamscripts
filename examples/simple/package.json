@@ -3,10 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "foo": "echo foo",
-    "bar": "echo bar"
-  },
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -14,5 +10,10 @@
   },
   "devDependencies": {
     "yamljs": "^0.2.4"
+  },
+  "scripts": {
+    "foo": "echo foo",
+    "bar": "echo bar",
+    "help": "yamscripts help"
   }
 }

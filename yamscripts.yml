@@ -1,3 +1,8 @@
-foo: 'echo foo'
-bar: 'echo bar'
-prebar: 'echo foooo'
+scripts:
+  # compile: Compiles yamscript
+  compile: 'node ./bin/yamscripts'
+
+  # test: Runs tests
+  test: 'mocha tests/**/*.test.js -R spec'
+  # test:watch: Runs tests continuously
+  test:watch: 'npm run test -- -w'
