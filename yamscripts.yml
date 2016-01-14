@@ -1,8 +1,8 @@
 scripts:
-  # compile: Compiles yamscript
-  yamscripts: 'node ./bin/yamscripts'
-
   # test: Runs tests
   test: 'mocha tests/**/*.test.js -R spec'
   # test:watch: Runs tests continuously
   test:watch: 'npm run test -- -w'
+
+  # override the default one to use the local path
+  yamscripts: 'node ./bin/yamscripts'
