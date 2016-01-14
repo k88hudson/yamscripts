@@ -14,7 +14,6 @@
   "scripts": {
     "test": "mocha -R spec",
     "foo": "hello world",
-    "build": "This is a build",
-    "help": "yamscripts help"
+    "build": "This is a build"
   }
 }

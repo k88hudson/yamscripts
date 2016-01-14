@@ -18,7 +18,6 @@ bar: foo
 const result = `
     foo  This is the foo task
          This is more info for it.
-
     bar  This is bar.`.replace('\n', '');
 
 describe('getComments', () => {

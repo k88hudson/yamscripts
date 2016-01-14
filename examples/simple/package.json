@@ -13,7 +13,6 @@
   },
   "scripts": {
     "foo": "echo foo",
-    "bar": "echo bar",
-    "help": "yamscripts help"
+    "bar": "echo bar"
   }
 }
