@@ -5,7 +5,6 @@ const assert = chai.assert;
 const colors = require('colors');
 const YamScripts = require('../lib/yamscripts');
 const stripAnsi = require('strip-ansi');
-const yamScripts = new YamScripts();
 
 const sampleComments = `# foo: This is the foo task
 # This is more info for it.
@@ -22,6 +21,7 @@ const result = `
 
 describe('getComments', () => {
   it('should get format comments given some yaml text', () => {
+    const yamScripts = new YamScripts();
     const actual = yamScripts.getComments(sampleComments, ['foo', 'bar:bar', 'baz']);
     console.log(actual);
     assert.equal(stripAnsi(actual), result)
@@ -30,9 +30,11 @@ describe('getComments', () => {
 
 describe('compile', () => {
   it('should compile without errors', () => {
-    yamScripts.compile({cwd: path.join(__dirname, '../examples/simple')});
+    const yamScripts = new YamScripts();
+    yamScripts.run({_: ['compile'], cwd: path.join(__dirname, '../examples/simple')});
   });
   it('should compile a file with comments without errors', () => {
-    yamScripts.compile({cwd: path.join(__dirname, '../examples/comments')});
+    const yamScripts = new YamScripts();
+    yamScripts.run({_: ['compile'], cwd: path.join(__dirname, '../examples/comments')});
   });
 });

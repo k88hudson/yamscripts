@@ -6,16 +6,10 @@
   "bin": {
     "yamscripts": "./bin/yamscripts.js"
   },
-  "scripts": {
-    "yamscripts": "node ./bin/yamscripts",
-    "test": "mocha tests/**/*.test.js -R spec",
-    "test:watch": "npm run test -- -w"
-  },
   "author": "@k88hudson",
   "license": "ISC",
   "dependencies": {
     "colors": "^1.1.2",
-    "js-string-escape": "^1.0.0",
     "js-yaml": "^3.5.2"
   },
   "devDependencies": {
@@ -24,5 +18,12 @@
     "mocha": "^2.3.4",
     "strip-ansi": "^3.0.0",
     "yamljs": "^0.2.4"
+  },
+  "scripts": {
+    "__": "# NOTE: THESE SCRIPTS ARE COMPILED!!! EDIT yamscripts.yml instead!!!",
+    "test": "mocha tests/**/*.test.js -R spec",
+    "test:watch": "npm run test -- -w",
+    "yamscripts": "node ./bin/yamscripts compile",
+    "help": "node ./bin/yamscripts help"
   }
 }
