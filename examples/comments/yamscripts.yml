@@ -2,10 +2,12 @@ scripts:
 # test: Tests are run on mocha.
 #       This is a second line about stuff.
 #       And this is a third line!
-  test: "mocha -R spec"
+  test: mocha -R spec
 # this comment shouldn't do anything
 # foo: Does nothing really
-  foo: "hello world"
+  foo: hello "world"
 # build: This is a build of cool things
 #        This is some other stuff
-  build: "This is a build"
+  build: This is a build
+  yamscripts: node ../../bin/yamscripts compile
+  help: node ../../bin/yamscripts help

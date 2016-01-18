@@ -6,5 +6,8 @@ const args = require('minimist')(process.argv.slice(2), {alias: {
   input: 'i',
   output: 'o'
 }});
+
 const yamScripts = new YamScripts();
-yamScripts.compile(args);
+yamScripts.run(args);
+
+
