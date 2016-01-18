@@ -20,7 +20,6 @@
     "yamljs": "^0.2.4"
   },
   "scripts": {
-    "__": "# NOTE: THESE SCRIPTS ARE COMPILED!!! EDIT yamscripts.yml instead!!!",
     "test": "mocha tests/**/*.test.js -R spec",
     "test:watch": "npm run test -- -w",
     "yamscripts": "node ./bin/yamscripts compile",

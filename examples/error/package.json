@@ -12,6 +12,10 @@
     "yamljs": "^0.2.4"
   },
   "scripts": {
-    "yamscripts": "node ../../bin/yamscripts compile"
+    "foo": "echo foo",
+    "bar": "echo bar",
+    "yamscripts": "node ../../bin/yamscripts compile",
+    "help": "yamscripts help",
+    "__": "# NOTE: THESE SCRIPTS ARE COMPILED!!! EDIT yamscripts.yml instead!!!"
   }
 }
