@@ -1,0 +1,17 @@
+{
+  "name": "npm-scripts-yaml",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "__": "# NOTE: THESE SCRIPTS ARE COMPILED!!! EDIT yamscripts.yml instead!!!",
+    "start": "npm-run-all --parallel start",
+    "prestart": "npm run setup",
+    "start:js": "webpack -w",
+    "start:css": "node-sass src/main.scss -w -r",
+    "help": "yamscripts help",
+    "yamscripts": "yamscripts compile"
+  }
+}

@@ -1,0 +1,7 @@
+scripts:
+  start:
+  # start: Run the app in development mode
+    _parallel: true
+    pre: =>setup
+    js: webpack -w
+    css: node-sass src/main.scss -w -r
