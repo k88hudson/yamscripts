@@ -1,7 +1,6 @@
 scripts:
   setup:
     clean: 'rm -rf www && mkdir www'
-    clean: 'rm -rf www && mkdir www'
     html: 'node ./bin/generate-html.js > www/index.html'
     intl: 'node ./bin/generate-locale-data > www/locale-data.js'
     static: 'cp -r src/static/* www'
