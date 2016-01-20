@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "colors": "^1.1.2",
+    "minimist": "^1.2.0",
     "yamljs": "^0.2.4"
   },
   "devDependencies": {
