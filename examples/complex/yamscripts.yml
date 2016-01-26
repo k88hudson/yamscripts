@@ -1,5 +1,16 @@
 scripts:
+
+
+  foo:
+    a:
+      one: =>css && =>js
+      two: echo "World"
+      post: echo "end"
+    b:
+      one: hello world
+
   setup:
+    # This is just some setup code
     clean: 'rm -rf www && mkdir www'
     html: 'node ./bin/generate-html.js > www/index.html'
     intl: 'node ./bin/generate-locale-data > www/locale-data.js'

@@ -6,6 +6,13 @@
   "author": "",
   "license": "ISC",
   "scripts": {
+    "foo": "npm-run-all foo:*",
+    "foo:a": "npm-run-all foo:a:*",
+    "foo:a:one": "npm run css && npm run js",
+    "foo:a:two": "echo \"World\"",
+    "postfoo:a": "echo \"end\"",
+    "foo:b": "npm-run-all foo:b:*",
+    "foo:b:one": "hello world",
     "setup": "npm-run-all setup:*",
     "setup:clean": "rm -rf www && mkdir www",
     "setup:html": "node ./bin/generate-html.js > www/index.html",

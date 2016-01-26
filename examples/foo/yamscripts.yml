@@ -1,0 +1,3 @@
+scripts:
+  # test: Runs tests
+  test: echo "Oops, no test exist yet."
