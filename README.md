@@ -20,6 +20,17 @@ scripts:
 ```
 
 ```yaml
+# TODO: This will be deprecated
+scripts:
+  test:
+    _parallel: true
+    pre: ./build.js
+    post: coverage.js > coveralls
+    mocha: mocha -R spec
+    karma: karma start
+```
+
+```yaml
 # TODO: This doesn't work yet
 scripts:
   test:
