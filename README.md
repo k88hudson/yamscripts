@@ -1,18 +1,18 @@
 ## Usage
 
-1. Install globally
+Install globally
 
 ```
 npm install yamscripts -g
 ```
 
-2. Run init in the root of your project
+Run init in the root of your project
 
 ```
 yamscripts init
 ```
 
-3. Write some scripts in `yamscripts.yml`.
+Write some scripts in `yamscripts.yml`.
 
 ```yaml
 scripts:
@@ -21,9 +21,9 @@ scripts:
   start: node server.js
 ```
 
-4. Run `npm run yamscripts` to compile changes. Now your scripts should be available as npm scripts!
+ Run `npm run yamscripts` to compile changes. Now your scripts should be available as npm scripts!
 
-5. Run `npm run help` to see help documentation generated from your comments. Any comment prefixed by `{script name}:` will be included in the auto-generated docs.
+ Run `npm run help` to see help documentation generated from your comments. Any comment prefixed by `{script name}:` will be included in the auto-generated docs.
 
 
 ## Examples
