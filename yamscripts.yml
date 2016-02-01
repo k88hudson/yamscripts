@@ -8,7 +8,7 @@ scripts:
   precommit: =>yamscripts
 
   preversion: npm test
-  postversion: npm publish
+  postversion: npm publish && git push origin master
 
   # override the default one to use the local path
   yamscripts: node ./bin/yamscripts compile
