@@ -5,7 +5,7 @@ describe('stringify', () => {
   it('should stringify an object', () => {
     const expected = `{
   "foo": "bar"
-}`;
+}\n`;
     assert.equal(utils.stringify({foo: 'bar'}), expected);
   });
 });
