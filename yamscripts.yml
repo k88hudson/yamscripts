@@ -3,6 +3,10 @@ scripts:
   test: mocha tests/**/*.test.js -R spec
   # test:watch: Runs tests continuously
   test:watch: npm run test -- -w
+
+  # Make sure we're compiling yamscripts.yaml before every commit
+  precommit: npm run yamscripts
+
   # override the default one to use the local path
   yamscripts: node ./bin/yamscripts compile
   help: node ./bin/yamscripts help

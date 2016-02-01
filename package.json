@@ -19,12 +19,14 @@
   "devDependencies": {
     "chai": "^3.4.1",
     "fs-extra": "^0.26.4",
+    "husky": "^0.10.2",
     "mocha": "^2.3.4",
     "strip-ansi": "^3.0.0"
   },
   "scripts": {
     "test": "mocha tests/**/*.test.js -R spec",
     "test:watch": "npm run test -- -w",
+    "precommit": "npm run yamscripts",
     "yamscripts": "node ./bin/yamscripts compile",
     "help": "node ./bin/yamscripts help",
     "__": "# NOTE: THESE SCRIPTS ARE COMPILED!!! EDIT yamscripts.yml instead!!!"
