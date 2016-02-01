@@ -26,6 +26,7 @@
     "test": "mocha tests/**/*.test.js -R spec",
     "test:watch": "npm run test -- -w",
     "yamscripts": "node ./bin/yamscripts compile",
-    "help": "node ./bin/yamscripts help"
+    "help": "node ./bin/yamscripts help",
+    "__": "# NOTE: THESE SCRIPTS ARE COMPILED!!! EDIT yamscripts.yml instead!!!"
   }
 }
