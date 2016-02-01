@@ -1,3 +1,7 @@
+# Yamscripts
+
+A way to write npm scripts in yaml, with a few extra fancy features.
+
 ## Usage
 
 Install globally
@@ -24,7 +28,6 @@ scripts:
  Run `npm run yamscripts` to compile changes. Now your scripts should be available as npm scripts!
 
  Run `npm run help` to see help documentation generated from your comments. Any comment prefixed by `{script name}:` will be included in the auto-generated docs.
-
 
 ## Examples
 
