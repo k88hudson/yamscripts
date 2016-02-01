@@ -1,8 +1,33 @@
-```bash
-yamscripts init
-yamscripts compile
-yamscripts help
+## Usage
+
+1. Install globally
+
 ```
+npm install yamscripts -g
+```
+
+2. Run init in the root of your project
+
+```
+yamscripts init
+```
+
+3. Write some scripts in `yamscripts.yml`.
+
+```yaml
+scripts:
+# test: This is just a way to run the tests once
+  test: mocha -R spec
+  start: node server.js
+```
+
+4. Run `npm run yamscripts` to compile changes. Now your scripts should be available as npm scripts!
+
+5. Run `npm run help` to see help documentation generated from your comments. Any comment prefixed by `{script name}:` will be included in the auto-generated docs.
+
+
+## Examples
+
 
 ```yaml
 scripts:
