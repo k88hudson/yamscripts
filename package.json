@@ -28,7 +28,7 @@
     "test:watch": "npm run test -- -w",
     "precommit": "npm run yamscripts",
     "preversion": "npm test",
-    "postversion": "npm publish && git push origin master",
+    "postversion": "npm publish && git push origin master --tags",
     "yamscripts": "node ./bin/yamscripts compile",
     "help": "node ./bin/yamscripts help",
     "__": "# NOTE: THESE SCRIPTS ARE COMPILED!!! EDIT yamscripts.yml instead!!!"
