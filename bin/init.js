@@ -6,7 +6,7 @@ const colors = require('colors');
 const baseTemplate = (
 `scripts:
   # test: Runs tests
-  test: echo "Oops, no test exist yet."
+  test: echo "Oops, no tests exist yet."
 `);
 module.exports = function init(options) {
   if (!options.force && fs.existsSync('yamscripts.yml')) {
