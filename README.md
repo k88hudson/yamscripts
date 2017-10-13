@@ -6,13 +6,13 @@ A way to write npm scripts in yaml, with a few extra fancy features.
 
 Install globally
 
-```
+```sh
 npm install yamscripts -g
 ```
 
 Run init in the root of your project
 
-```
+```sh
 yamscripts init
 ```
 

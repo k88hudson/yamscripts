@@ -1,13 +1,11 @@
 {
   "name": "yamscripts",
+  "description": "A way to write npm scripts in yaml, with a few extra fancy features",
   "version": "0.0.3",
-  "description": "",
-  "main": "index.js",
+  "author": "@k88hudson",
   "bin": {
     "yamscripts": "./bin/yamscripts.js"
   },
-  "author": "@k88hudson",
-  "license": "ISC",
   "dependencies": {
     "colors": "^1.1.2",
     "commander": "^2.9.0",
@@ -23,14 +21,17 @@
     "mocha": "^2.3.4",
     "strip-ansi": "^3.0.0"
   },
+  "license": "ISC",
+  "main": "./bin/yamscripts.js",
+  "repository": "k88hudson/yamscripts",
   "scripts": {
-    "test": "mocha tests/**/*.test.js -R spec",
-    "test:watch": "npm run test -- -w",
+    "__": "# NOTE: THESE SCRIPTS ARE COMPILED!!! EDIT yamscripts.yml instead!!!",
+    "help": "node ./bin/yamscripts help",
+    "postversion": "npm publish && git push origin master --tags",
     "precommit": "npm run yamscripts",
     "preversion": "npm test",
-    "postversion": "npm publish && git push origin master --tags",
-    "yamscripts": "node ./bin/yamscripts compile",
-    "help": "node ./bin/yamscripts help",
-    "__": "# NOTE: THESE SCRIPTS ARE COMPILED!!! EDIT yamscripts.yml instead!!!"
+    "test": "mocha tests/**/*.test.js -R spec",
+    "test:watch": "npm run test -- -w",
+    "yamscripts": "node ./bin/yamscripts compile"
   }
 }
