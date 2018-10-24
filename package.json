@@ -1,7 +1,7 @@
 {
   "name": "yamscripts",
   "description": "A way to write npm scripts in yaml, with a few extra fancy features",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "author": "@k88hudson",
   "bin": {
     "yamscripts": "./bin/yamscripts.js"
